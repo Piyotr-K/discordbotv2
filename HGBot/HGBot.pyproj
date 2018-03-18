@@ -21,11 +21,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="fileCreator.py" />
-    <Compile Include="addmovies.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="dos2unix.py" />
     <Compile Include="fileEditor.py" />
     <Compile Include="HGBot.py" />
   </ItemGroup>
@@ -34,6 +29,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\aiden_patrol.pk1" />
+    <Content Include="data\rico_quotes.pk1" />
+    <Content Include="data\token.pk1" />
     <Content Include="data\vincent_movies.pk1" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
