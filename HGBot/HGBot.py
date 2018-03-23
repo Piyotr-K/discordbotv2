@@ -62,6 +62,8 @@ async def on_message(msg):
 
         if 'hi' in buffer or 'hello' in buffer:
             await client.send_message(msg.channel, 'hi there! ' + msg.author.nick)
+        elif 'video games' in buffer:
+            await client.send_message(msg.channel, 'video jamessss')
         elif 'what am I playing' in buffer:
             await client.send_message(msg.channel, msg.author.game.name)
         elif 'flipcoin' in buffer:
