@@ -50,7 +50,7 @@ async def on_message(msg):
         else:
             await client.send_message(msg.channel, 'dran\'s actually austismic stop saying it')
 
-    if 'https://' in buffer and 'links' not in str(msg.channel):
+    if ('https://' in buffer or 'http://' in buffer) and 'links' not in str(msg.channel):
         with open(aidenFP, "rb") as patrol_file:
             patrol = pickle.load(patrol_file)
 
