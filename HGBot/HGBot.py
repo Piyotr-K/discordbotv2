@@ -48,7 +48,7 @@ async def on_message(msg):
         if 'Bot' in str(msg.author):
             return
         else:
-            await client.send_message(msg.channel, 'dran\'s actually austismic stop saying it')
+            await client.send_message(msg.channel, 'stop saying dran')
 
     if ('https://' in buffer or 'http://' in buffer) and 'links' not in str(msg.channel):
         with open(aidenFP, "rb") as patrol_file:
@@ -57,8 +57,6 @@ async def on_message(msg):
         await client.send_message(msg.channel, "Dear " + msg.author.nick + ",\r\n\r\n" + patrol[0] + "\r\n\r\n" + patrol[1] + "\r\n" + patrol[2] + "\r\n" + patrol[3])
 
     if buffer.startswith('!james'):
-        if "Caydunn#7963" in str(msg.author):
-            await client.send_message(msg.channel, 'Fuck you Caden')
 
         if 'hi' in buffer or 'hello' in buffer:
             await client.send_message(msg.channel, 'hi there! ' + msg.author.nick)
@@ -72,13 +70,11 @@ async def on_message(msg):
         elif 'diceroll' in buffer:
             roll = random.choice(['1', '2', '3', '4', '5', '6'])
             await client.send_message(msg.channel, 'You rolled: ' + roll)
-        elif 'gay' in buffer:
-            response = random.choice(['no u', 'ur dad lesbian'])
+        elif 'dumb' in buffer:
+            response = random.choice(['no u', 'y tho'])
             await client.send_message(msg.channel, response)
 
     if buffer.startswith('!yoel'):
-        if "Caydunn#7963" in str(msg.author):
-            await client.send_message(msg.channel, 'Fuck you Caden')
 
         checkfor = ['you\'re', 'your', 'you']
         out = msg.content[5:]
@@ -95,11 +91,8 @@ async def on_message(msg):
     if buffer.startswith("!jay"):
         await client.send_message(msg.channel, 'this is true')
 
-    if buffer.startswith("!aids"):
-        await client.send_message(msg.channel, 'Fuck you aiden')
-
     if buffer.startswith('!richardz'):
-        await client.send_message(msg.channel, 'Fucking 99 in 5')
+        await client.send_message(msg.channel, '99 in 5')
 
     if buffer.startswith('!rico'):
         with open(ricoFP, "rb") as rico_file:
